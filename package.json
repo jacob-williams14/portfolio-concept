@@ -16,6 +16,7 @@
     "next-sanity": "^5.5.8",
     "react": "^18",
     "react-dom": "^18",
+    "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^6.6.0",
     "sanity": "^3.18.1",
     "styled-components": "6.1",
