@@ -3,7 +3,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import Link from 'next/link'
 import { PageInfo } from '../../../../types'
 import { urlForImage } from '../../../../sanity/lib/image'
 
@@ -24,10 +23,13 @@ export default function Hero({ pageInfo }: Props) {
       <div className="relative mx-auto h-80 w-80">
         <Image
           src={urlForImage(pageInfo?.heroImage).url()}
-          layout="fill"
-          objectFit="cover"
           alt=""
           className="rounded-full"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+          }}
         />
       </div>
       <div className="z-20">
