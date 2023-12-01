@@ -23,10 +23,16 @@ export interface Social extends SanityBody {
 
 export interface PageInfo extends SanityBody {
   _type: 'pageInfo'
-  backgroundInfo: string
+  cornerText: string
   name: string
-  role: string
-  heroImage: Image
-  profilePic: Image
+  centerImage: Image
+  aboutPic: Image
+  backgroundInfo: string
   typewriterText: string[]
+}
+
+export interface Playlist extends SanityBody {
+  _type: 'playlist'
+  name: string
+  url: string
 }

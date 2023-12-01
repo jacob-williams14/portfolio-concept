@@ -3,6 +3,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
+
 import { PageInfo, Social } from '../../../../types'
 
 type Props = {
@@ -12,7 +13,7 @@ type Props = {
 
 export default function Header({ socials, pageInfo }: Props) {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl items-start justify-between p-5 xl:items-center">
+    <header className="sticky top-0 z-30 mx-auto flex max-w-7xl justify-between p-5">
       <motion.div
         initial={{
           x: -500,
@@ -56,7 +57,7 @@ export default function Header({ socials, pageInfo }: Props) {
         className="flex cursor-pointer items-center self-center"
       >
         <p className="text-lg uppercase tracking-[6px] text-icy-blue">
-          {pageInfo?.name}
+          {pageInfo?.cornerText}
         </p>
       </motion.div>
     </header>

@@ -1,22 +1,21 @@
 import { defineField, defineType } from 'sanity'
 
-
 export default defineType({
   name: 'pageInfo',
   type: 'document',
   title: 'Page Info',
   fields: [
+    defineField({ name: 'cornerText', type: 'string', title: 'Corner Text' }),
     defineField({ name: 'name', type: 'string', title: 'Name' }),
-    defineField({ name: 'role', type: 'string', title: 'Role' }),
     defineField({
-      name: 'heroImage',
+      name: 'centerImage',
       type: 'image',
-      title: 'Image',
+      title: 'Centered Image',
     }),
     defineField({
-      name: 'profilePic',
+      name: 'aboutPic',
       type: 'image',
-      title: 'Profile Pic',
+      title: 'About Me Pic',
       options: {
         hotspot: true,
       },
