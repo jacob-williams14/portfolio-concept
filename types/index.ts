@@ -21,8 +21,8 @@ export interface Social extends SanityBody {
   color: string
 }
 
-export interface PageInfo extends SanityBody {
-  _type: 'pageInfo'
+export interface HomeData extends SanityBody {
+  _type: 'homeData'
   cornerText: string
   name: string
   centerImage: Image

@@ -1,9 +1,9 @@
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
-  name: 'pageInfo',
+  name: 'homeData',
   type: 'document',
-  title: 'Page Info',
+  title: 'Home Data',
   fields: [
     defineField({ name: 'cornerText', type: 'string', title: 'Corner Text' }),
     defineField({ name: 'name', type: 'string', title: 'Name' }),
@@ -11,6 +11,9 @@ export default defineType({
       name: 'centerImage',
       type: 'image',
       title: 'Centered Image',
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: 'aboutPic',

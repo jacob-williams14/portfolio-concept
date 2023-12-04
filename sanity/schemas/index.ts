@@ -1,9 +1,9 @@
 import { type SchemaTypeDefinition } from 'sanity'
 
-import pageInfo from './pageInfo'
+import homeData from './homeData'
 import social from './social'
 import playlist from './playlist'
 
 export const schemas: { types: SchemaTypeDefinition[] } = {
-  types: [pageInfo, social, playlist],
+  types: [homeData, social, playlist],
 }

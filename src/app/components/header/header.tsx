@@ -4,14 +4,14 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 
-import { PageInfo, Social } from '../../../../types'
+import { HomeData, Social } from '../../../../types'
 
 type Props = {
   socials: Social[]
-  pageInfo: PageInfo
+  homeData: HomeData
 }
 
-export default function Header({ socials, pageInfo }: Props) {
+export default function Header({ socials, homeData }: Props) {
   return (
     <header className="sticky top-0 z-30 mx-auto flex max-w-7xl justify-between p-5">
       <motion.div
@@ -57,7 +57,7 @@ export default function Header({ socials, pageInfo }: Props) {
         className="flex cursor-pointer items-center self-center"
       >
         <p className="text-lg uppercase tracking-[6px] text-icy-blue">
-          {pageInfo?.cornerText}
+          {homeData?.cornerText}
         </p>
       </motion.div>
     </header>
