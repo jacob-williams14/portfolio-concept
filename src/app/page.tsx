@@ -4,10 +4,9 @@ import { getSocials } from '../../sanity/utils/getSocials'
 import { getHomeData } from '../../sanity/utils/getHomeData'
 import { getPlaylists } from '../../sanity/utils/getPlaylists'
 
-import Header from './components/header/header'
-import Hero from './components/hero/hero'
-
-import Gallery from './components/playlist-gallery/gallery'
+import Header from './home-components/header/header'
+import Hero from './home-components/hero/hero'
+import About from './home-components/about/about'
 
 export default async function Home() {
   const homeData: HomeData = await getHomeData()
@@ -22,8 +21,8 @@ export default async function Home() {
       <section id="hero" className="snap-start">
         <Hero homeData={homeData} />
       </section>
-      <section id="spotify-player" className="snap-center">
-        <Gallery playlists={playlists} />
+      <section id="about" className="snap-center">
+        <About homeData={homeData} />
       </section>
     </div>
   )
