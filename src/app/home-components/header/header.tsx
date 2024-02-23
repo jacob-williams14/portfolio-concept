@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 
 import { HomeData, Social } from '../../../../types'
 
+import './header.css'
+
 type Props = {
   socials: Social[]
   homeData: HomeData
@@ -13,7 +15,7 @@ type Props = {
 
 export default function Header({ socials, homeData }: Props) {
   return (
-    <header className="sticky top-0 z-30 mx-auto flex max-w-7xl justify-between p-5">
+    <header className="sticky-header">
       <motion.div
         initial={{
           x: -500,
@@ -28,7 +30,7 @@ export default function Header({ socials, homeData }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="header-motion-left"
       >
         {socials?.map((social) => (
           <SocialIcon
@@ -54,11 +56,9 @@ export default function Header({ socials, homeData }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex cursor-pointer items-center self-center"
+        className="header-motion-right"
       >
-        <p className="text-lg uppercase tracking-[6px] text-icy-blue">
-          {homeData?.cornerText}
-        </p>
+        <p className="header-corner-text">{homeData?.cornerText}</p>
       </motion.div>
     </header>
   )

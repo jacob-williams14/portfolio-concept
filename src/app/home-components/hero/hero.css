@@ -1,0 +1,40 @@
+.hero-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  gap: 2rem;
+}
+
+.hero-image-container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: 20rem;
+  width: 20rem;
+}
+
+.name-text {
+  font-size: 1rem;
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: #6b7280;
+}
+
+.typewriter-text {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #A5F2F3;
+}
+
+@media (min-width: 1024px) {
+  .typewriter-text {
+    font-size: 3rem;
+  }
+}

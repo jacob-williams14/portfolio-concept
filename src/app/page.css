@@ -1,0 +1,37 @@
+.page-container {
+  position: relative;
+  z-index: 0;
+  height: 100dvh; /* full height of the viewport */
+  scroll-snap-type: y mandatory; /* vertical snapping */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(36, 36, 36); /* Custom RGB background color */
+  color: white; /* Text color */
+
+  /* Custom Scrollbar Styles for Webkit Browsers */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(179, 229, 252, 0.8) rgba(156, 156, 156, 0.2); /* scrollbar-thumb and scrollbar-track for Firefox */
+}
+
+.page-container::-webkit-scrollbar {
+  width: 8px; /* A thin scrollbar, typically around 8px */
+}
+
+.page-container::-webkit-scrollbar-track {
+  background: rgba(
+    156,
+    156,
+    156,
+    0.2
+  ); /* scrollbar-track-gray-400 with 20% opacity */
+}
+
+.page-container::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    179,
+    229,
+    252,
+    0.8
+  ); /* scrollbar-thumb-icy-blue with 80% opacity */
+  border-radius: 4px; /* Optional: rounded corners for the scrollbar thumb */
+}

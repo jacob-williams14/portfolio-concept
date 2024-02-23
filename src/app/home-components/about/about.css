@@ -1,0 +1,127 @@
+/* motion div for the section */
+.about-motion {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  height: 100dvh;
+  max-width: 80rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-motion {
+    text-align: left;
+  }
+}
+
+/* about header */
+.about-header {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #a5f2f3;
+  text-align: center !important;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .about-header {
+    margin-top: 5rem;
+  }
+}
+
+/* about content container for image and text */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+}
+
+/* motion div containing about image */
+.about-image-container {
+  position: relative;
+  height: 16rem;
+  width: 12rem;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-image-container {
+    margin-bottom: 0;
+    height: 24rem;
+    width: 16rem;
+    border-radius: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-image-container {
+    height: 600px;
+    width: 500px;
+  }
+}
+
+/* about text container */
+.about-text-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .about-text-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-text-container > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/* about large text */
+.about-large-text {
+  font-size: 2.25rem;
+  font-weight: 600;
+
+  span {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(165 242 243 / 0.7);
+  }
+}
+
+/* about me body text */
+.about-body-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .about-body-text {
+    max-height: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-body-text {
+    max-height: 11rem;
+  }
+}
