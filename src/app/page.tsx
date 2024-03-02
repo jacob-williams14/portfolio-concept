@@ -10,6 +10,8 @@ import About from './home-components/about/about'
 
 import './page.css'
 
+export const revalidate = 30
+
 export default async function Home() {
   const homeData: HomeData = await getHomeData()
   const socials: Social[] = await getSocials()
